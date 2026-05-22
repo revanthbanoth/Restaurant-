@@ -1,0 +1,13 @@
+{
+  "name": "spice-garden-restaurant",
+  "version": "1.0.0",
+  "description": "Spice Garden - Premium Indian Restaurant Website",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "EasyWeb",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
