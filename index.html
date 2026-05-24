@@ -771,14 +771,17 @@
             width: 140px;
             height: 140px;
             margin: 0 auto 25px;
-            background: #222;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4.5rem;
             position: relative;
             z-index: 1;
+        }
+        .chef-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
         }
         .chef-avatar::before {
             content: '';
@@ -786,16 +789,8 @@
             inset: -4px;
             border-radius: 50%;
             background: linear-gradient(135deg, var(--primary), var(--accent));
-            z-index: -1;
+            z-index: 0;
             transition: transform 0.5s;
-        }
-        .chef-avatar::after {
-            content: '';
-            position: absolute;
-            inset: 4px;
-            border-radius: 50%;
-            background: #222;
-            z-index: -1;
         }
         .chef-card:hover .chef-avatar::before {
             transform: rotate(180deg);
@@ -1520,7 +1515,7 @@
         </div>
         <div class="chef-grid">
             <div class="chef-card">
-                <div class="chef-avatar">👨‍🍳</div>
+                <div class="chef-avatar"><img src="assets/images/chef_ramesh.png" alt="Chef Ramesh Kumar"></div>
                 <h3 class="chef-name">Chef Ramesh Kumar</h3>
                 <div class="chef-role">Executive Chef</div>
                 <div class="chef-tags">
@@ -1529,7 +1524,7 @@
                 </div>
             </div>
             <div class="chef-card">
-                <div class="chef-avatar">👩‍🍳</div>
+                <div class="chef-avatar"><img src="assets/images/chef_priya.png" alt="Chef Priya Sharma"></div>
                 <h3 class="chef-name">Chef Priya Sharma</h3>
                 <div class="chef-role">Pastry Chef</div>
                 <div class="chef-tags">
@@ -1538,7 +1533,7 @@
                 </div>
             </div>
             <div class="chef-card">
-                <div class="chef-avatar">👨‍🍳</div>
+                <div class="chef-avatar"><img src="assets/images/chef_arjun.png" alt="Chef Arjun Reddy"></div>
                 <h3 class="chef-name">Chef Arjun Reddy</h3>
                 <div class="chef-role">Tandoor Specialist</div>
                 <div class="chef-tags">
