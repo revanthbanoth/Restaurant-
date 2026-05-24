@@ -1714,6 +1714,11 @@
 
     <!-- JAVASCRIPT -->
     <script>
+        // Prevent scroll restoration and force to top on reload
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
 
         // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
