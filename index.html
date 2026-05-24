@@ -153,6 +153,9 @@
             color: var(--primary);
             font-weight: 700;
             letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
         }
         .nav-links {
             display: flex;
@@ -1069,7 +1072,15 @@
             color: var(--primary);
             font-weight: 700;
             margin-bottom: 25px;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-img {
+            height: 1.2em;
+            width: auto;
+            border-radius: 8px;
+            object-fit: contain;
         }
         .footer-desc {
             color: var(--subtext);
@@ -1304,7 +1315,7 @@
     <!-- SECTION 2: NAVBAR -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">🍛 Spice Garden</a>
+            <a href="#" class="logo"><img src="assets/images/logo.png" alt="Spice Garden Logo" class="logo-img"> Spice Garden</a>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#menu" class="nav-link">Menu</a></li>
@@ -1661,7 +1672,7 @@
         <div class="container fade-in-up">
             <div class="footer-grid">
                 <div>
-                    <a href="#" class="footer-logo">🍛 Spice Garden</a>
+                    <a href="#" class="footer-logo"><img src="assets/images/logo.png" alt="Spice Garden Logo" class="logo-img"> Spice Garden</a>
                     <p class="footer-desc">Where Every Bite Tells a Story. Experience the rich flavors of India crafted with love and tradition.</p>
                 </div>
                 
